@@ -4,7 +4,7 @@ import livroModel from "./models/livroModel.js";
 
 const app = express();
 app.use(express.json());
-mongoose.connect("mongodb+srv://admin:root@cluster0.i1kxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("mongodb+srv://admin:<password>@cluster0.i1kxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 app.listen(3334, () => console.log('servidor iniciado!!'));
 
